@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <title>Bli medlem</title>
+  </head>
+  <body>
+    <h2>Bli medlem</h2>
+    <div class="formContainer">
+      <form action="http://httpbin.org/anything" method="post">
+        <div class="firstName">
+          <label for="firstName">First Name</label>
+          <input type="text" name="firstName" id="firstName" required />
+        </div>
+
+        <div class="lastName">
+          <label for="lastName">Last Name</label>
+          <input type="text" name="lastName" id="lastName" required />
+        </div>
+
+        <div class="username">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" required />
+        </div>
+
+        <div class="password">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required />
+        </div>
+
+        <div class="email">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+
+        <div class="catSelect">
+          <label for="catSelect">Favorite cat color</label>
+          <select name="catColor" id="catSelect" required>
+            <option value="">Please choose your favorite cat</option>
+            <option value="brown">Brown cat</option>
+            <option value="black">Black cat</option>
+            <option value="white">White cat</option>
+            <option value="grey">Grey cat</option>
+          </select>
+        </div>
+
+        <div class="terms">
+          <label for="acceptTerms">I accept the terms and conditions</label>
+          <input type="checkbox" name="acceptTerms" id="acceptTerms" required/>
+        </div>
+
+        <div class="send">
+          <button type="submit">Skicka</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
